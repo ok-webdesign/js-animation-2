@@ -1,0 +1,23 @@
+@mixin centered-flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin spacing ($margin: 10px, $padding: 10px) {
+    margin: $margin;
+    padding: $padding;
+}
+
+@mixin full-sized-container { 
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin dot ($bg-color, $diameter) {
+    background-color: $bg-color;
+    border: none;
+    border-radius: 50%;
+    width: $diameter;
+    height: $diameter;
+}

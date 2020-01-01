@@ -1,0 +1,39 @@
+@import '_mixins';
+@import '_variables';
+
+body {
+
+    @include spacing (0, 0);
+    overflow: hidden;
+    background-color: $dark-blue;
+
+    .container {
+
+        @include centered-flex-box;
+        @include full-sized-container;
+        @include spacing (0, 0);
+
+        position: fixed;
+
+        h1 {
+
+            font-family: 'Abril Fatface', cursive;
+            font-size: $btn-font-size;
+            color: $white-yellow;
+            letter-spacing: 0.1em;
+            text-shadow: 0 0 5px $white-yellow;
+            opacity: 0;
+
+        }
+
+        .firefly {
+
+            @include dot($white-yellow, $small-dot-diameter);
+            position: fixed;
+            box-shadow: 0 0 5px $yellow-glow, inset 0 0 5px $yellow-glow;
+
+        }
+
+    }
+
+}
